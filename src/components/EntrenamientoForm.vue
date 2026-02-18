@@ -18,7 +18,6 @@ const form = computed({
   set: (v) => emit('update:modelValue', v),
 })
 
-// Validación simple (requisito: campos obligatorios)
 const isValid = computed(() => {
   return (
     form.value.fecha.trim().length > 0 &&

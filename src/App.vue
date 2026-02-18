@@ -80,7 +80,7 @@ h1 {
   grid-template-columns: 420px minmax(420px, 520px);
   gap: 28px;
   align-items: start;
-  justify-content: center; /* centra el bloque como la demo */
+  justify-content: center;
 }
 
 @media (max-width: 980px) {
