@@ -32,3 +32,4 @@ Clonar repositorio:
 ```bash
 git clone https://github.com/JulianChavarr/entrenamiento-app.git
 cd entrenamiento-app
+npm install
