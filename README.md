@@ -15,6 +15,27 @@ Aplicación web desarrollada con **Vue 3 + TypeScript + Firebase** que permite r
 
 ---
 
+## 🎨 Diseño UI
+
+- 🌙 Diseño oscuro moderno
+- 🧩 Componentes desacoplados (Form, List, Card)
+- ✨ Cards interactivas con efectos hover
+- 📱 Layout responsive con CSS Grid
+- 🎯 Variables CSS para consistencia visual
+
+---
+
+## 🧱 Arquitectura del Proyecto
+
+El proyecto sigue una estructura modular basada en componentes y composables:
+
+- `components/` → UI desacoplada (Form, List, Card)
+- `composables/` → lógica reutilizable (`useEntrenamientos`)
+- `services/` → conexión con Firebase
+- `types/` → tipado fuerte con TypeScript
+
+---
+
 ## 🛠️ Tecnologías
 
 - Vue 3
@@ -33,3 +54,8 @@ Clonar repositorio:
 git clone https://github.com/JulianChavarr/entrenamiento-app.git
 cd entrenamiento-app
 npm install
+
+Ejecutar en desarrollo:
+
+```bash
+npm run dev
