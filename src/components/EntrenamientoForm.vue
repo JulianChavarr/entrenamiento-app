@@ -66,32 +66,82 @@ function onSubmit() {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 12px;
+  gap: 12px;
+
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+
   max-width: 420px;
 }
-.actions {
-  display: flex;
-  gap: 10px;
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+}
+
+label {
+  font-weight: 700;
+  font-size: 13px;
+  color: #111;
   margin-top: 8px;
 }
+
+input {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #d7d7d7;
+  padding: 0 12px;
+
+  background: #f5f5f5;
+  color: #111;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.18);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
 button {
-  padding: 10px 14px;
+  height: 44px;
   border: 0;
   border-radius: 10px;
+  font-weight: 800;
   cursor: pointer;
 }
+
+button[type='submit'] {
+  background: #1877f2;
+  color: #fff;
+}
+
+button.secondary {
+  background: #d1d5db;
+  color: #111;
+}
+
 button:disabled {
-  opacity: 0.6;
+  opacity: 0.55;
   cursor: not-allowed;
 }
-.secondary {
-  background: #ddd;
-}
+
 .hint {
+  margin: 6px 0 0;
   font-size: 12px;
-  opacity: 0.8;
+  color: #444;
+  opacity: 0.9;
 }
 </style>

@@ -58,22 +58,35 @@ async function handleDelete(id: string) {
   </main>
 </template>
 
-<style>
+<style scoped>
 .container {
-  max-width: 980px;
-  margin: 40px auto;
-  font-family: system-ui, Arial, Helvetica, sans-serif;
-  padding: 0 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
 }
+
+h1 {
+  text-align: center;
+  margin: 0 0 34px;
+  font-size: 34px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 18px;
+  grid-template-columns: 420px minmax(420px, 520px);
+  gap: 28px;
   align-items: start;
+  justify-content: center; /* centra el bloque como la demo */
 }
-@media (max-width: 900px) {
+
+@media (max-width: 980px) {
   .grid {
     grid-template-columns: 1fr;
+    justify-content: stretch;
   }
 }
 </style>
