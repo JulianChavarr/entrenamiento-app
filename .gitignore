@@ -7,7 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Runtime data
 .env
+.firebase/
 
 node_modules
 .DS_Store
